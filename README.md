@@ -1,5 +1,5 @@
 
-# Road Lane Detection Project
+# Lane Detection Project
 
 This project implements a lane detection system using Python, OpenCV, and MoviePy. The goal is to process a video input, detect lane lines, and display the results with an intuitive graphical interface (GUI) using Tkinter. The system processes images frame-by-frame, detects the lanes using Hough transforms, and outputs the processed video showing the detected lanes.
 
@@ -28,18 +28,18 @@ Ensure you have Python 3.x installed on your system. You will also need to insta
 
 You can install these dependencies using pip:
 
-\`\`\`bash
+```bash
 pip install matplotlib numpy opencv-python moviepy Pillow
-\`\`\`
+```
 
 ### Cloning the Repository
 
 Clone this repository using the following command:
 
-\`\`\`bash
+```bash
 git clone <repository-url>
 cd <repository-directory>
-\`\`\`
+```
 
 Replace \`<repository-url>\` with the actual URL of your GitHub repository.
 
@@ -50,17 +50,17 @@ Replace \`<repository-url>\` with the actual URL of your GitHub repository.
 1. **Set Input and Output Paths:**
    Open the Python script and specify the path to the input video file and the desired output file.
 
-   \`\`\`python
+   ```python
    white_output = 'path_to_output_file.mp4'
    clip1 = VideoFileClip("path_to_input_file.mp4")
-   \`\`\`
+   ```
 
 2. **Run the Script:**
    Run the Python script to process the video:
 
-   \`\`\`bash
+   ```bash
    python lane_detection.py
-   \`\`\`
+   ```
 
    This will generate an output video with detected lane lines overlaid on the original frames.
 
@@ -69,17 +69,17 @@ Replace \`<repository-url>\` with the actual URL of your GitHub repository.
 1. **Set Input Test Video and Result Video Paths:**
    In the GUI section of the code, make sure to set the correct paths for \`cap1\` and \`cap2\` to your input test video and the resulting lane-detected video, respectively:
 
-   \`\`\`python
+   ```python
    cap1 = cv2.VideoCapture("path_to_input_test_video.mp4")
    cap2 = cv2.VideoCapture("path_to_resultant_lane_detected_video.mp4")
-   \`\`\`
+   ```
 
 2. **Run the GUI:**
    Launch the GUI by running the script:
 
-   \`\`\`bash
+   ```bash
    python lane_detection_gui.py
-   \`\`\`
+   ```
 
    The GUI will show two windows: one displaying the original input video and the other showing the processed video with detected lanes.
 
